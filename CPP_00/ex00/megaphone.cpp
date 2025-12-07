@@ -6,7 +6,7 @@
 /*   By: anareval <anareval@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/07 17:06:25 by anareval          #+#    #+#             */
-/*   Updated: 2025/12/07 18:17:40 by anareval         ###   ########.fr       */
+/*   Updated: 2025/12/07 18:22:24 by anareval         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@ int	main(int argc, char **argv) {
 				std::cout << static_cast<char>(toupper(argv[i][j]));
 				j++;
 			}
-			if(i < argc - 1)
-				std::cout << " ";
 			i++;
 		}
 		std::cout << std::endl;
