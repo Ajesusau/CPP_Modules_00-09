@@ -6,7 +6,7 @@
 #    By: anareval <anareval@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/07 16:43:22 by anareval          #+#    #+#              #
-#    Updated: 2025/12/07 16:51:48 by anareval         ###   ########.fr        #
+#    Updated: 2025/12/07 17:03:53 by anareval         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
 
-SRCS =				megaphone.cpp
+SRCS =		megaphone.cpp
 
 all: $(NAME)
 	@echo "$(GREEN)✅ Build completed successfully!$(RESET)"
