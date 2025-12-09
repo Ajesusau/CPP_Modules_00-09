@@ -6,7 +6,7 @@
 #    By: anareval <anareval@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/07 16:43:22 by anareval          #+#    #+#              #
-#    Updated: 2025/12/07 18:25:22 by anareval         ###   ########.fr        #
+#    Updated: 2025/12/09 15:48:19 by anareval         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,8 @@ TEAL	= \033[38;5;80m
 
 NAME=phonebook
 OBJS = $(SRCS:.cpp=.o)
+HEADERS = 	-I ./include
+
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
@@ -36,7 +38,7 @@ all: $(NAME)
 
 %.o: %.cpp
 	@echo "$(CYAN)🛠️  Compiling $@...$(RESET)"
-	@$(CC) $(CFLAGS) -o $@ -c $<
+	@$(CC) $(CFLAGS) $(HEADERS) -o $@ -c $<
 
 $(NAME): $(OBJS)
 	@echo "$(PURPLE)📦 Creating the program: $(NAME)"

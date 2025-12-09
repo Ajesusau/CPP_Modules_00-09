@@ -6,7 +6,7 @@
 #    By: anareval <anareval@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/07 16:43:22 by anareval          #+#    #+#              #
-#    Updated: 2025/12/07 17:03:53 by anareval         ###   ########.fr        #
+#    Updated: 2025/12/09 15:48:15 by anareval         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,7 @@ TEAL	= \033[38;5;80m
 
 NAME=megaphone
 OBJS = $(SRCS:.cpp=.o)
+
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
