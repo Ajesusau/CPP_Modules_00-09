@@ -1,17 +1,7 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: anareval <anareval@student.42malaga.com    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/07 18:25:45 by anareval          #+#    #+#             */
-/*   Updated: 2025/12/09 15:40:29 by anareval         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <iostream>
 #include <unistd.h>
+#include "PhoneBook.hpp"
+
 
 void title_img()
 {
@@ -55,6 +45,7 @@ void commands_menu()
 int main()
 {
 	std::string option;
+	PhoneBook phonebook;
 
 	title_img();
 	sleep(2);
@@ -70,11 +61,11 @@ int main()
 			return (1);
 		else if (option == "ADD")
 		{
-			std::cout << "añado primo" << std::endl;
+			phonebook.add_contact();
 		}
 		else if (option == "SEARCH")
 		{
-			std::cout << "busca loco" << std::endl;	
+			phonebook.search_contact();
 		}
 	}
 	return 0;

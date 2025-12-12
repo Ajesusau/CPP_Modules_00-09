@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: anareval <anareval@student.42malaga.com    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/07 16:43:22 by anareval          #+#    #+#              #
-#    Updated: 2025/12/09 15:48:19 by anareval         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 # Colors ANSI
 RED		= \033[1;31m
 GREEN	= \033[1;32m
@@ -31,7 +19,8 @@ CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
 
-SRCS =		main.cpp
+SRCS =		main.cpp \
+			src/PhoneBook.cpp
 
 all: $(NAME)
 	@echo "$(GREEN)✅ Build completed successfully!$(RESET)"
