@@ -20,7 +20,8 @@ CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
 
 SRCS =		main.cpp \
-			src/PhoneBook.cpp
+			src/PhoneBook.cpp \
+			src/Contact.cpp
 
 all: $(NAME)
 	@echo "$(GREEN)✅ Build completed successfully!$(RESET)"

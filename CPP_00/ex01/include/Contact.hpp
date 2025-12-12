@@ -6,6 +6,10 @@
 class Contact
 {
 
+	public:
+
+		Contact();
+		~Contact();
 };
 
 #endif
