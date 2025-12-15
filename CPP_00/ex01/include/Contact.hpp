@@ -1,6 +1,8 @@
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
 
+#include <iostream>
+#include <iomanip>
 #include <string>
 
 class Contact
@@ -9,7 +11,7 @@ class Contact
 
 		std::string	firstName;
 		std::string	lastName;
-		std::string	nikname;
+		std::string	nickname;
 		std::string	phoneNumber;
 		std::string	secret;
 
@@ -19,13 +21,15 @@ class Contact
 		~Contact();
 
 		void	setContact(std::string firstName ,std::string secondName, 
-			std::string nikname, std::string phoneNumber, std::string secret);
+			std::string nickname, std::string phoneNumber, std::string secret);
 
 		std::string	getFirstName();
 		std::string	getLastName();
-		std::string	getNikname();
+		std::string	getNickname();
 		std::string	getPhoneNumber();
 		std::string	getSecret();
+		
+		bool		is_empity();
 };
 
 #endif
