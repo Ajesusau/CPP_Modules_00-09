@@ -20,16 +20,16 @@ class Contact
 		Contact();
 		~Contact();
 
-		void	setContact(std::string firstName ,std::string secondName, 
+		void	setContact(std::string firstName, std::string lastName,
 			std::string nickname, std::string phoneNumber, std::string secret);
 
-		std::string	getFirstName();
-		std::string	getLastName();
-		std::string	getNickname();
-		std::string	getPhoneNumber();
-		std::string	getSecret();
+		std::string	getFirstName() const;
+		std::string	getLastName() const;
+		std::string	getNickname() const;
+		std::string	getPhoneNumber() const;
+		std::string	getSecret() const;
 		
-		bool		is_empity();
+		bool		is_empty() const;
 };
 
 #endif

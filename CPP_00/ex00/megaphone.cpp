@@ -1,16 +1,17 @@
 #include <iostream>
+#include <cctype>
 
 int	main(int argc, char **argv) {
 	int	i;
 	int	j;
 
 	i = 1;
-	if(argc >= 2)
+	if (argc >= 2)
 	{
-		while(argv[i])
+		while (argv[i])
 		{
 			j = 0;
-			while(argv[i][j])
+			while (argv[i][j])
 			{
 				std::cout << static_cast<char>(toupper(argv[i][j]));
 				j++;

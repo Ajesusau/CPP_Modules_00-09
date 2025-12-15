@@ -3,7 +3,9 @@
 
 #include <string>
 #include <iostream>
+#include <iomanip>
 #include <cstdlib>
+
 #include "Contact.hpp"
 
 class PhoneBook
@@ -11,6 +13,10 @@ class PhoneBook
 	private:
 
 	Contact contact[8];
+	bool is_number(std::string number);
+	std::string	refactor_tabs(std::string string);
+	std::string format_field(std::string field);
+	
 
 	public:
 
