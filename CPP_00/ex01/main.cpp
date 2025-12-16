@@ -49,11 +49,11 @@ int main()
 	clearScreen();
 	title_img();
 	sleep(2);
+	clearScreen();
+	commands_menu();
 	
 	while (option != "EXIT")
 	{
-		clearScreen();
-		commands_menu();
 		std::cout << std::endl;
 		std::cout << "Select an option: ";
 		std::getline(std::cin, option);
@@ -64,22 +64,18 @@ int main()
 			return (1);
 		}
 		else if (option == "ADD")
-		{
 			phonebook.add_contact();
-			sleep(2);
-
-		}
 		else if (option == "SEARCH")
-		{
 			phonebook.search_contact();
-			sleep(2);
-		}
 		else if (option == "EXIT")
 			continue;
 		else
 		{
+			clearScreen();
+			commands_menu();
+			std::cout << std::endl;
 			std::cout << "Invalid option." << std::endl;
-			sleep(2);
+
 		}
 	}
 	std::cout << "Phone book closed." << std::endl;
