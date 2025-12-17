@@ -1,10 +1,5 @@
 #include "Zombie.hpp"
 
-Zombie::Zombie()
-{
-	this->name = "default";
-}
-
 
 Zombie::Zombie(std::string name)
 {

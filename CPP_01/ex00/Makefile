@@ -21,8 +21,6 @@ RM = rm -f
 
 SRCS =		main.cpp \
 			src/Zombie.cpp \
-			src/newZombie.cpp \
-			src/randomChump.cpp
 
 all: $(NAME)
 	@echo "$(GREEN)✅ Build completed successfully!$(RESET)"
