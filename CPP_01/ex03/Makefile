@@ -11,15 +11,18 @@ PURPLE	= \033[38;5;141m
 ORANGE	= \033[38;5;208m
 TEAL	= \033[38;5;80m
 
-NAME=fight
+NAME = fight
 OBJS = $(SRCS:.cpp=.o)
-HEADERS = 	-I ./include
+HEADERS = -I ./include
 
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98 -pedantic
 RM = rm -f
 
-SRCS =		main.cpp
+SRCS =		main.cpp \
+			src/Weapon.cpp \
+			src/HumanA.cpp \
+			src/HumanB.cpp
 
 all: $(NAME)
 	@echo "$(GREEN)✅ Build completed successfully!$(RESET)"

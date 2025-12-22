@@ -11,7 +11,7 @@ PURPLE	= \033[38;5;141m
 ORANGE	= \033[38;5;208m
 TEAL	= \033[38;5;80m
 
-NAME = zombie
+NAME = replace
 OBJS = $(SRCS:.cpp=.o)
 HEADERS = -I ./include
 
@@ -19,10 +19,7 @@ CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98 -pedantic
 RM = rm -f
 
-SRCS =		main.cpp \
-			src/Zombie.cpp \
-			src/newZombie.cpp \
-			src/randomChump.cpp
+SRCS =		main.cpp
 
 all: $(NAME)
 	@echo "$(GREEN)✅ Build completed successfully!$(RESET)"

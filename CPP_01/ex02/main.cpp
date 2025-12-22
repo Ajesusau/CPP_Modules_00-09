@@ -13,6 +13,5 @@ int main (void)
 	std::cout << "String: " << string << std::endl;
 	std::cout << "Pointer: " << *stringPTR << std::endl;
 	std::cout << "Reference: " << stringREF << std::endl;
-
 	return 0;
 }
