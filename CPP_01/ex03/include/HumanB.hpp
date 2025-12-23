@@ -1,5 +1,5 @@
 #ifndef HUMANB_HPP
-#define	HUMANB_HPPP
+#define	HUMANB_HPP
 
 #include <string>
 #include <iostream>

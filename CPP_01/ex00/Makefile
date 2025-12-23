@@ -16,7 +16,7 @@ OBJS = $(SRCS:.cpp=.o)
 HEADERS = -I ./include
 
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -std=c++98 -pedantic
+CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
 
 SRCS =		main.cpp \
